@@ -28,7 +28,7 @@ TEST_CASE( "Close on different line", "[isBalanced]" ) {
 }
 
 TEST_CASE( "Missing close", "[isBalanced]" ) {
-	std::string s = "start with some text ( then some more ( foobar ) again { some more nesting } but there is no closing square bracket here";
+	std::string s = "start with some text [ then some more ( foobar ) again { some more nesting } but there is no closing square bracket here";
 
     REQUIRE( !isBalanced(s) );
 }

@@ -14,7 +14,7 @@ bool isBalanced(const std::string &text){
 
   for(int i=0; i<text.size(); i++){
     c = text[i];
-    switch(c){
+    switch(c) {
     case '[':
     case '{':
     case '(':
@@ -40,6 +40,8 @@ bool isBalanced(const std::string &text){
       break;
     }
   }
-
-  return true;
+  if(unmatched.empty()) {
+      return true;
+  }
+  return false;
 }
