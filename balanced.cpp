@@ -39,6 +39,6 @@ bool isBalanced(const std::string &text){
 
     }
   }
-  
+
   return true;
 }

@@ -4,7 +4,6 @@ python:
 compiler: gcc
 script: make && make test
 
-
 #notifications section
 notifications:
     email:
