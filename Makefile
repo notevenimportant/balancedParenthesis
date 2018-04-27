@@ -9,7 +9,7 @@
 # make will run the balanced.o target (if out of date)
 # before running the commands for test
 
-$(CXXFLAGS)=-std=c++11 -fprofile-arcs -ftest-coverage -g
+CXXFLAGS=-std=c++11 -fprofile-arcs -ftest-coverage -g
 
 test: balanced.o
 	g++ $(CXXFLAGS) *.o balancedTest.cpp -o balancedTest
